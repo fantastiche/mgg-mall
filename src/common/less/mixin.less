@@ -1,0 +1,290 @@
+@baseFontSize: 75;
+@rem: @baseFontSize * 1rem;
+
+@white: #ffffff;
+@red: #e60012;
+@h1: #333333;
+@intro: #999999;
+@grey: #666666;
+
+.dpr-font(@fontSize) {
+  font-size: @fontSize;
+  [data-dpr="2"] & {
+    font-size: @fontSize * 2;
+  }
+}
+
+.arrow-right {
+  background: url("./icon/more.png") no-repeat center;
+  background-size: 56/@rem;
+  width: 56/@rem;
+  height: 56/@rem;
+  display: inline-block;
+}
+
+.border-1px {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #dbdbdb;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(.5);
+  }
+}
+
+.border-1px-e5 {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #e5e5e5;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(.5);
+  }
+}
+
+.border-1px-e8 {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #e8e8e8;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(.5);
+  }
+}
+
+.border-1px-ccc {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #cccccc;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(.5);
+  }
+}
+
+.mt-20 {
+  margin-top: 20/@rem;
+}
+
+.icon(@size1,@size2) {
+  display: inline-block;
+  width: @size1/@rem;
+  height: @size2/@rem;
+  background-size: @size1/@rem @size2/@rem;
+}
+
+.icon-massage {
+  background: url("./icon/message.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-search {
+  background: url("./icon/search.png") no-repeat center;
+  .icon(36, 36);
+}
+
+.icon-refresh {
+  background: url("./icon/refresh.png") no-repeat center;
+  .icon(24, 25);
+}
+
+.icon-close {
+  background: url("./icon/close.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-go {
+  background: url("./icon/go.png") no-repeat center;
+  .icon(138, 63);
+}
+
+.icon-home {
+  background: url("./icon/home.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-home-active {
+  background: url("./icon/home-active.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-shopping-cart {
+  background: url("./icon/shopping-cart.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-shopping-cart-active {
+  background: url("./icon/shopping-cart-active.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-personal {
+  background: url("./icon/personal.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-personal-active {
+  background: url("./icon/personal-active.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-check {
+  background: url("./icon/check.png") no-repeat center;
+  .icon(40, 40);
+}
+
+.icon-uncheck {
+  background: url("./icon/uncheck.png") no-repeat center;
+  .icon(40, 40);
+}
+
+.icon-next {
+  background: url("./icon/next.png") no-repeat center;
+  .icon(36, 36);
+}
+
+.icon-address {
+  background: url("./icon/address.png") no-repeat center;
+  .icon(40, 40);
+}
+
+.icon-set {
+  background: url("./icon/set.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-edit {
+  background: url("./icon/edit.png") no-repeat center;
+  .icon(51, 51);
+}
+
+.icon-waiting-pay {
+  background: url("./icon/waiting_pay.png") no-repeat center;
+  .icon(60, 60);
+}
+
+.icon-waiting-sent {
+  background: url("./icon/waiting_sent.png") no-repeat center;
+  .icon(60, 60);
+}
+
+.icon-on-sent {
+  background: url("./icon/on_send.png") no-repeat center;
+  .icon(60, 60);
+}
+
+.icon-after-sale {
+  background: url("./icon/after_sale.png") no-repeat center;
+  .icon(60, 60);
+}
+
+.icon-service {
+  background: url("./icon/service.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-order {
+  background: url("./icon/order.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-skip {
+  background: url("./icon/skip.png") no-repeat center;
+  .icon(25, 25);
+}
+
+.icon-coin {
+  background: url("./icon/coin.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-mine {
+  background: url("./icon/mine.png") no-repeat center;
+  .icon(60, 60);
+}
+
+.icon-clean {
+  background: url("./icon/clean.png") no-repeat center;
+  .icon(36, 36);
+}
+
+.icon-pay-weixin {
+  background: url("./icon/pay_weixin.png") no-repeat center;
+  .icon(36, 36);
+}
+
+.icon-pay-zhifubao {
+  background: url("./icon/pay_zhifubao.png") no-repeat center;
+  .icon(36, 36);
+}
+
+.icon-warning {
+  background: url("./icon/warning.png") no-repeat center;
+  .icon(24, 24);
+}
+
+.icon-warning-red {
+  background: url("./icon/warning-red.png") no-repeat center;
+  .icon(24, 24);
+}
+
+.icon-person {
+  background: url("./icon/btn_icon_geren.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-code {
+  background: url("./icon/btn_icon_yanzhen.png") no-repeat center;
+  .icon(48, 48);
+}
+
+.icon-to-pay {
+  background: url("./icon/order_bg_to_be_paid@2x.png") no-repeat center;
+  .icon(300, 180);
+}
+
+.icon-paid {
+  background: url("./icon/order_bg_paid@2x.png") no-repeat center;
+  .icon(300, 180);
+}
+
+.icon-delivered {
+  background: url("./icon/order_bg_delivered@2x.png") no-repeat center;
+  .icon(300, 180);
+}
+
+.icon-compelete {
+  background: url("./icon/order_bg_completed@2x.png") no-repeat center;
+  .icon(300, 180);
+}
+
+.icon-trunk {
+  background: url("./icon/order_icon_truck_round@2x.png") no-repeat center;
+  .icon(60, 60);
+}
+
+.icon-location-red {
+  background: url("./icon/order_icon_location@2x.png") no-repeat center;
+  .icon(30, 30);
+}
+
+
+
+
+
